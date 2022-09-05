@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;1,300&display=swap');   
+*{
+     box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0%;
+    overflow-x: hidden;
+    margin: 0%;
+    font-size: 1.6rem;
+   
+}
+
+.header{
+    height: 100vh;
+    font-weight: 200;
+    display: grid;
+   height: 400px;
+   background-position: center;
+   padding: 0 2rem;
+   background-size: cover;
+   padding-bottom: 4rem;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(mat/images/desktop/image-hero.jpg);
+}
+
+.header .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+}
+
+.header .head>h1{
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    list-style-type: none;
+}
+.bars, 
+.close{
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+    display: none;
+    cursor: pointer;
+}
+
+ul a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.header .hero{
+    border: 1px solid white;
+   color: aliceblue;
+   padding: 0;
+   width: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 300;
+}
+
+.collection2{
+    display: none;
+    place-items: center;
+}
+
+.collection2 button{
+    padding: .6rem 2rem;
+    margin: 2rem;
+    border: 1px solid #333;
+    background-color: transparent;
+}
+
+.collection2 .sub2{
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+}
+.collection2 .sub2 .box{
+    position: relative;
+   width: 470px;
+}
+.collection2 .sub2 .box h1{
+   position: absolute;
+   bottom: 1rem;
+   font-weight: 300;
+   left: 3rem;
+   color: antiquewhite;
+ }
+.collection2 .sub2 .box img{
+    width: 100%;
+ }
+
+.header .hero h1{
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.h_img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+   width: 100%;
+   margin: 4rem;
+}
+
+
+
+.h_img .cons1{
+    position: absolute;
+    left: 58rem;
+    top: 12rem;
+    font-weight: 200;
+    font-family: inherit;
+    width: 700px;
+    background-color: white;
+    padding: 7rem;
+    line-height: 25px;
+}
+
+.collection{
+    display: grid;
+    place-items: center;
+}
+.collection .heros{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 52rem;
+}
+.collection .heros h1{
+    font-size: 4rem;
+    font-weight: 300;
+}
+.collection .heros button{
+    font-size: 1.2rem;
+    padding: .6rem 2rem;
+   background-color: white;
+   color: rgb(71, 119, 71);
+   border: 1px solid rgb(71, 119, 71);
+}
+
+.collection .sub{
+    margin: 1rem auto;
+    display: grid;
+    place-items: center;
+    column-gap: 8rem;
+    row-gap: 1.7rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.collection .sub .box{
+    position: relative;
+    width: 200px;
+    
+}
+.collection .sub .box h1{
+    position: absolute;
+    bottom: 0%;
+    color: beige;
+    font-weight: 200;
+    left: 4rem;
+
+}
+
+.footer{
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer .ones .col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.icons{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: end;
+}
+
+
+@media (max-width:700px){
+    .header{
+        height: 100vh;
+        font-weight: 200;
+        display: grid;
+        place-items: center;
+       background-position: center;
+       padding: 0 2rem;
+       background-size: cover;
+       padding-bottom: 15rem;
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(mat/images/mobile/image-hero.jpg);
+    }
+
+  
+    nav ul{
+        position: absolute;
+        width: 100%;
+        padding: 1rem 3rem;
+        right: 0;
+        top: -38rem;
+        backdrop-filter: blur(20px);
+        background-color: rgba(51, 51, 51, 0.171);
+        display: flex;
+        align-items: center;
+        gap: .1rem;
+        justify-content: center;
+        flex-direction: column;
+        list-style-type: none;
+        transition: all .5s ease-in-out;
+    }
+
+    nav ul li{
+        width: 100%;
+        padding: 2rem;
+    }
+    .header .head>h1{
+       position: absolute;
+       left: 2rem;
+       top: 1.5rem;
+       color: rgb(248, 241, 241);
+    }
+    
+    nav ul li:hover{
+       background-color: blueviolet;
+    }
+    .bars{
+        display: block;
+        
+    }
+    
+
+    .change{
+        top: -3rem;
+    }
+
+
+    .h_img{
+        display: grid;
+        place-items: center;
+        gap: 1rem;
+        width: 100%;
+    
+    }
+
+    .h_img img{
+        width: 500px;
+        
+    }
+
+    .h_img .cons1{
+
+        display: grid;
+        place-items: start;
+        position: static;
+        width: 500px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .collection{
+      display: none;
+    }
+    .collection2{
+        display: grid;
+    }
+
+    .footer{
+        width: 100%;
+        background-color: #333;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .footer .ones .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+    }
+    .icons{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+
+   
+}
